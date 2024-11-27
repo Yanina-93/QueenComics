@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- data about data goes betweeen the head tags -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> QueensComic </title>	
+		
+		<!-- Add Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		
+		
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+		<style>
+	   		.navbar, .footer {
+				font-family: 'Bebas Neue', sans-serif;
+				background-color: #702931; 
+			}
+
+			#carouselCaptions {
+				height: 600px; 
+				overflow: auto;
+			}
+
+			#carouselCaptions .carousel-inner {
+				height: 100%;
+			}
+
+
+			#carouselCaptions .carousel-item img {
+				object-fit: cover; 
+				height: 100%; 
+				width: 100%; 
+			}
+			
+			.new-this-week{
+				margin-top: 100px;
+				margin-bottom: 50px;
+				margin-left: 100px;
+				font-size: 27px;
+				font-weight: 700;
+			}
+			
+			.new-comic-session{
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				column-gap: 16px;
+				row-gap: 14px;
+				margin-left: 100px;
+				margin-right: 100px;
+			}
+			
+			.comic-name{
+				font-size: 15px;
+				font-weight: 600;
+				margin-top: 10px;
+			}
+			
+			.comic-creator{
+				font-size: 13px;
+				color: gray;
+			}
+			
+
+
+  		</style>
+			
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">						
+					<img src="images/logo_2.png" alt="Logo" width="50">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+    				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="comics.html">Comics</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="news.html">News</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="blog.html">Blogs</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="products.html">Products</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="About.html">About</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		
+				<!-- Carousal -->
+		
+		<!-- Carousel -->
+    <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+            <!-- Carousel -->
+		<div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Carousel Inner -->
+        <div class="carousel-inner">
+            <!-- Carousel Item 1 -->
+            <div class="carousel-item active">
+                <img src="images/picture1.jpg" class="d-block" alt="Comics">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Hello</h3>
+                </div>
+            </div>
+
+            <!-- Carousel Item 2 -->
+            <div class="carousel-item">
+                <img src="images/picture2.jpg" class="d-block" alt="Comics">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Hello</h3>
+                </div>
+            </div>
+
+            <!-- Carousel Item 3 -->
+            <div class="carousel-item">
+                <img src="images/picture3.jpg" class="d-block" alt="Comics">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Hello</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+	
+	<!-- NEW THIS WEEK SESSION-->	
+	<div class="new-this-week">
+	NEW THIS WEEK
+	</div>
+	
+	<!-- NEW THIS WEEK COMICS-->
+	<div class="new-comic-session">
+	
+		<div class="comic-preview">
+			<div class="cover-picture">
+				<img src="images/new1.jpg">
+			</div>
+		
+			<div class="comic-name">
+				<p> West Coast Avengers (2024) # 1 </p>
+			</div>
+		
+			<div class="comic-creator">
+				<p> Duggan, Kim, Harvey </p>
+			</div>
+		</div>
+		
+		
+		<div class="comic-preview">
+			<div class="cover-picture">
+				<img src="images/new2.jpg">
+			</div>
+		
+			<div class="comic-name">
+				<p> Star Wars: Battle of Jakku - Republic Under Siege (2024) #2 </p>
+			</div>
+		</div>
+		
+		
+		<div class="comic-preview">
+			<div class="cover-picture">
+				<img src="images/new3.jpg">
+			</div>
+		
+			<div class="comic-name">
+				<p> Star Wars: Battle of Jakku - Republic Under Siege (2024) #2 </p>
+			</div>
+		
+			<div class="comic-creator">
+				<p> Segura, Raffaele, Clarke </p>
+			</div>
+		</div>
+		
+		
+		<div class="comic-preview">
+			<div class="cover-picture">
+				<img src="images/new4.jpg">
+			</div>
+		
+			<div class="comic-name">
+				<p> Mystique (2024) #2 </p>
+			</div>
+		
+			<div class="comic-creator">
+				<p> Shalvey </p>
+			</div>
+		</div>
+		
+		<div class="comic-preview">
+			<div class="cover-picture">
+				<img src="images/new5.jpg">
+			</div>
+		
+			<div class="comic-name">
+				<p> Iron Man (2024) #2 </p>
+			</div>
+		
+			<div class="comic-creator">
+				<p> Ackerman, Ohta, Putri </p>
+			</div>
+		</div>
+		
+		<div class="comic-preview">
+			<div class="cover-picture">
+				<img src="images/new6.jpg">
+			</div>
+		
+			<div class="comic-name">
+				<p> Dazzler (2024) #3 </p>
+			</div>
+		
+			<div class="comic-creator">
+				<p> Loo, Loureiro, Dodson </p>
+			</div>
+		</div>
+		
+		<div class="comic-preview">
+			<div class="cover-picture">
+				<img src="images/new7.jpg">
+			</div>
+		
+			<div class="comic-name">
+				<p> Spirits of Vengeance (2024) #3 </p>
+			</div>
+		
+			<div class="comic-creator">
+				<p> Pirzada, Pramanik, Casanovas </p>
+			</div>
+		</div>
+		
+		<div class="comic-preview">
+			<div class="cover-picture">
+				<img src="images/new8.jpg">
+			</div>
+		
+			<div class="comic-name">
+				<p> Venom War (2024) #5 </p>
+			</div>
+		
+			<div class="comic-creator">
+				<p> EwingCoello </p>
+			</div>
+		</div>
+		
+		
+		<div class="comic-preview">
+			<div class="cover-picture">
+				<img src="images/new9.jpg">
+			</div>
+		
+			<div class="comic-name">
+				<p> Uncanny X-Men (2024) #6 </p>
+			</div>
+		
+			<div class="comic-creator">
+				<p> Simone, Garron, Marquez </p>
+			</div>
+		</div>
+		
+	</div>
+		
+		
+		
+		
+		
+		
+		<!-- FOOTER -->	
+		<footer class="footer py-5 mt-5">
+			<div class="container text-dark text-center">
+				<p class="display-5 mb-3" > QueensComic</p>
+				<small class="text-dark-50">&copy; Copyright by QueensComic. All rights reserved.</small>
+			</div>
+		</footer>
+		
+		<!-- BOOTSTRAP  SCRIPT -->	
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+	
+		
+	</body>
+</html>
