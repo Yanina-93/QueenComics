@@ -1,0 +1,31 @@
+#topTrend {
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(112, 41, 49, 0.7); /* Màu đỏ với độ trong suốt */
+    opacity: 0; /* Bắt đầu ẩn */
+    transition: opacity 0.5s ease; /* Hiệu ứng mượt khi hiện/ẩn */
+}
+
+/* Khi trỏ chuột vào container cha, hiển thị overlay */
+.position-relative:hover .overlay {
+    opacity: 1;
+}
+
+/* Văn bản trong overlay */
+.overlay h8 {
+    font-size: 1.2rem;
+    font-weight: bold;
+	text-align: center;
+    margin: 0;
+}
+.fuIcon img {
+	width: 25px;
+	height: auto
+	}
