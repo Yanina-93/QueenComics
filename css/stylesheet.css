@@ -8,17 +8,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(112, 41, 49, 0.7); /* Màu đỏ với độ trong suốt */
-    opacity: 0; /* Bắt đầu ẩn */
-    transition: opacity 0.5s ease; /* Hiệu ứng mượt khi hiện/ẩn */
+    background-color: rgba(112, 41, 49, 0.7); 
+    opacity: 0;
+    transition: opacity 0.5s ease; 
 }
 
-/* Khi trỏ chuột vào container cha, hiển thị overlay */
 .position-relative:hover .overlay {
     opacity: 1;
 }
 
-/* Văn bản trong overlay */
 .overlay h8 {
     font-size: 1.2rem;
     font-weight: bold;
