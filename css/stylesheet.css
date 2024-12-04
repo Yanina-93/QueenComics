@@ -1,29 +1,4 @@
-#topTrend {
-	box-sizing: border-box;
-	border: 1px solid black;
+/* navbar style*/
+.navbar {
+		font-family: 'Bebas Neue', sans-serif;
 }
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(112, 41, 49, 0.7); 
-    opacity: 0;
-    transition: opacity 0.5s ease; 
-}
-
-.position-relative:hover .overlay {
-    opacity: 1;
-}
-
-.overlay h8 {
-    font-size: 1.2rem;
-    font-weight: bold;
-	text-align: center;
-    margin: 0;
-}
-.fuIcon img {
-	width: 25px;
-	height: auto
-	}
