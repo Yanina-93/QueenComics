@@ -1,0 +1,149 @@
+	  /* Add cart*/
+		.cart-container {
+			position: relative;
+		}
+
+		.cart-box {
+			position: fixed;
+			top: 0;
+			right: -300px; 
+			width: 300px;
+			background: linear-gradient(180deg, #ffffff, #f1f1f1);
+			padding: 20px;
+			box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+			transition: right 0.3s ease; 
+			z-index: 9999;
+			font-family: 'Arial', sans-serif;
+			color: #333;
+			max-height: 90%; 
+			overflow-y: auto; 
+			border-radius: 8px;
+		}
+
+        .cart-box.active {
+            right: 0; 
+        }
+
+        .cart-box h2 {
+			font-family: Playfair Display;
+			font-size: 1.5em;
+			font-weight: bold;
+			color:  #702931; 
+			text-align: center;
+			margin-bottom: 20px;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
+}
+        .cart-box .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+			font-size: 0.9em;
+			color: #555;
+        }
+
+        .cart-box .cart-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .cart-box .total {
+            font-size: 1.2em;
+			font-weight: bold;
+			color: #222;
+			text-align: right;
+            margin-top: 20px;
+        }
+
+        .cart-box .close-btn {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            background: #dc3545;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+		.remove-icon {
+			color: #e0554c;
+			font-size: 1.2em;
+			cursor: pointer;
+			margin-left: 10px;
+		}
+
+		.remove-icon:hover {
+			color: #c9443c;
+		}
+
+		
+		/*Heading */
+		.category-heading{
+			font-family: Playfair Display;
+		}
+		
+		/* Carousel*/
+
+		.carousel-control-prev,
+		.carousel-control-next {
+			top: 50%; 
+			transform: translateY(-50%);
+			width: auto; 
+			border-radius: 50%;
+		}
+
+		.carousel-control-prev {
+			left: 1px; 
+		}
+
+		.carousel-control-next {
+			right: 1px; 
+		}
+			
+		.carousel-control-prev-icon,
+		.carousel-control-next-icon {
+			background-color: black; 
+			border-radius: 50%; 
+			width: 30px; 
+			height: 30px;
+			background-size: 100%; 
+		}
+
+		.product-card img {
+			max-height: 200px;
+			object-fit: cover; 
+		}
+			
+		.carousel-item .product-card {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			height: 100%; 
+			text-align: center;
+			background-color: #F8F8F8;
+		}
+
+		.comic-title{
+			font-size: 13px; 
+			font-weight: bold;
+			}
+			
+		.price{
+			font-size: 14px; 
+			color: gray;
+			}
+
+
+		/* Banner */
+		.banner-container {
+			display: flex;
+			justify-content: center; 
+			align-items: center;    
+			height: 100px;       
+		}
+
+		.promotion-banner-picture2 {
+			max-width: 100%;
+			height: auto; 
+		}
