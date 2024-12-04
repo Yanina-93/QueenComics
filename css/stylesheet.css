@@ -1,13 +1,24 @@
 /* navbar style*/
 .navbar {
 	font-family: 'Bebas Neue', sans-serif;
+	height: 15vh;
+	display: flex;
 }
+.navbar-brand img {
+  height: 10vh !important;
+  width: auto !important;
+}
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* category heading style */
 .category-heading{
 	font-family: Playfair Display;
 }
-/* footer style*/
+
+/*style for icon image in the footer*/
 .fuIcon img {
 	width: 25px;
 	height: auto
-}
