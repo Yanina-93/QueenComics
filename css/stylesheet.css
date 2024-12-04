@@ -1,7 +1,12 @@
 /* navbar style*/
 .navbar {
-		font-family: 'Bebas Neue', sans-serif;
+	font-family: 'Bebas Neue', sans-serif;
 }
+/* category heading style */
+.category-heading{
+	font-family: Playfair Display;
+}
+/* footer style*/
 .fuIcon img {
 	width: 25px;
 	height: auto
