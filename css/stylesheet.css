@@ -2,3 +2,7 @@
 .navbar {
 		font-family: 'Bebas Neue', sans-serif;
 }
+.fuIcon img {
+	width: 25px;
+	height: auto
+}
