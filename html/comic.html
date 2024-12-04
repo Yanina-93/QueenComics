@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- data about data goes betweeen the head tags -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Page Title & Favicon -->
+		<title> QueensComic: Comics </title>
+		<link rel="icon" type="image/png" href="../images/logo_2.png">
+		
+		<!--Add bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		
+		<!-- Add google font-->
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+		
+		<!-- Add CCS sheet-->
+		<link rel="stylesheet" href="../css/comic.css">
+		
+		<style>
+	   		.navbar {
+				font-family: 'Bebas Neue', sans-serif;
+			}
+
+  		</style>
+			
+	</head>
+	<body>
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+			<div class="container-fluid ms-3">
+				<a class="navbar-brand" href="#">						
+					<img src="../images/logo_2.png" alt="Logo" width="50">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+					<span class="navbar-toggler-icon"></span>
+    			</button>
+				
+				<div class="collapse navbar-collapse" id="navMenu">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="comics.html">Comics</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="News.html">News</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="blog.html">Blogs</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="products.html">Products</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="About.html">About</a>
+						</li>
+						
+						<li class="nav-item">
+							<i class="fa fa-shopping-cart" style="font-size:48px;color:red"></i>
+						</li>
+						<br>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<!-- Add to cart -->		
+		<div class="cart-container">
+			<div class="cart-box" id="cart-box">
+				<h2> Your Cart</h2>
+				<div id="cart-items"></div>
+				<p class="total">Total: €<span id="total-price">0</span></p>
+				<button class="close-btn" onclick="toggleCart(false)">Close</button>
+			</div>
+		</div>
+	
+	
+		<!-- SPIDER-MAN heading -->
+		<div class="container mt-5 mb-4">
+			<h2 class="category-heading"> 
+			SPIDER-MAN
+			</h2> 
+		</div>
+
+
+		<!-- Spider-man Carousel-->
+
+		<div id="productCarousel" class="carousel slide" style="width: 80%; margin: 0 auto;" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				
+				<!-- Spider-man Carousel Slide 1 -->
+				<div class="carousel-item active">
+					<div class="row">
+
+						<!-- Spider-man Carousel Slide 1 Product 1 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/spiderman1.png" class="img-fluid mt-5 mb-2" alt="Spider-Man Freshman Year">
+								<h5 class="comic-title">Spider-Man Freshman Year</h5>
+								<p class="price">€9.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5" onclick="addToCart('Spider-Man Freshman Year', 9.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+
+						<!-- Spider-man Carousel Slide 1 Product 2 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/spiderman2.png" class="img-fluid mt-5 mb-2" alt="The Amazing Spider-Man Vol. 1">
+								<h5 class="comic-title">The Amazing Spider-Man Vol. 1</h5>
+								<p class="price">€11.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5" onclick="addToCart('The Amazing Spider-Man Vol. 1', 11.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+
+						<!-- Spider-man Carousel Slide 1 Product 3 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/spiderman3.png" class="img-fluid mt-5 mb-2" alt="Ultimate Spider-Man 2">
+								<h5 class="comic-title">Ultimate Spider-Man 2</h5>
+								<p class="price">€13.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5" onclick="addToCart('Ultimate Spider-Man 2', 13.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+								
+						<!-- Spider-man Carousel Slide 1 Product 4 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/spiderman4.png" class="img-fluid mt-5 mb-2" alt="Spider-Punk: Arms Race">
+								<h5 class="comic-title">Spider-Punk: Arms Race</h5>
+								<p class="price">€12.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5" onclick="addToCart('Spider-Punk: Arms Race', 12.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<!-- Spider-man Carousel Slide 2 -->
+				<div class="carousel-item">
+					<div class="row">
+					
+						<!-- Spider-man Carousel Slide 2 Product 1 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/spiderman5.png" class="img-fluid mt-5 mb-2" alt="Spider-Man Magazine 447">
+								<h5 class="comic-title">Spider-Man Magazine 447</h5>
+								<p class="price">€6.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5"onclick="addToCart('Spider-Man Magazine 447', 6.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+						
+						<!-- Spider-man Carousel Slide 2 Product 2 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/spiderman6.png" class="img-fluid mt-5 mb-2" alt="Product 6">
+								<h5 class="comic-title">The Amazing Spider-Man Vol. 2</h5>
+								<p class="price">€11.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5"onclick="addToCart('The Amazing Spider-Man Vol. 2', 11.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+						
+						<!-- Spider-man Carousel Slide 2 Product 3 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/spiderman7.png" class="img-fluid mt-5 mb-2" alt="Marvel Select: Spider-Man – The Lost Hunt">
+								<h5 class="comic-title">Marvel Select: Spider-Man – The Lost Hunt</h5>
+								<p class="price">€10.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5"onclick="addToCart('Marvel Select: Spider-Man – The Lost Hunt', 10.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+						
+						<!-- Spider-man Carousel Slide 2 Product 4 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/spiderman8.png" class="img-fluid mt-5 mb-2" alt="Miles Morales: Spider-Man Vol. 1">
+								<h5 class="comic-title">Miles Morales: Spider-Man Vol. 1</h5>
+								<p class="price">€9.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5"onclick="addToCart('Miles Morales: Spider-Man Vol. 1', 9.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+						<!-- Spider-man Carousel Slide 2 Product END -->
+					</div>
+				</div>
+			</div>
+
+			<!-- carousel Controls -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			
+			<button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		
+
+		<!-- Avengers heading -->
+		<div class="container mt-5 mb-4">
+			<h2 class="category-heading"> 
+			AVENGER
+			</h2> 
+		</div>
+
+
+		<!-- Avengers Carousel-->
+
+		<div id="productCarousel2" class="carousel slide" style="width: 80%; margin: 0 auto;" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				
+				<!-- Avengers Carousel Slide 1 -->
+				<div class="carousel-item active">
+					<div class="row">
+
+						<!-- Avengers Carousel Slide 1 Product 1 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/avenger1.png" class="img-fluid mt-5 mb-2" alt="Avengers Vol.1: The Impossible City">
+								<h5 class="comic-title">Avengers Vol.1: The Impossible City</h5>
+								<p class="price">€19.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5" onclick="addToCart('Avengers Vol.1: The Impossible City', 19.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+
+						<!-- Avengers Carousel Slide 1 Product 2 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/avenger2.png" class="img-fluid mt-5 mb-2" alt="A.X.E. Judgment Day">
+								<h5 class="comic-title">A.X.E. Judgment Day</h5>
+								<p class="price">€11.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5" onclick="addToCart('A.X.E. Judgment Day', 11.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+
+						<!-- Avengers Carousel Slide 1 Product 3 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/avenger3.png" class="img-fluid mt-5 mb-2" alt="New Avengers - Everything Dies">
+								<h5 class="comic-title">New Avengers - Everything Dies</h5>
+								<p class="price">€13.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5" onclick="addToCart('New Avengers - Everything Dies', 13.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+								
+						<!-- Avengers Carousel Slide 1 Product 4 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/avenger4.png" class="img-fluid mt-5 mb-2" alt="Avengers: The Kang Dynasty Omnibus">
+								<h5 class="comic-title">Avengers: The Kang Dynasty Omnibus</h5>
+								<p class="price">€12.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5" onclick="addToCart('Avengers: The Kang Dynasty Omnibus', 12.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<!-- Avengers Carousel Slide 2 -->
+				<div class="carousel-item">
+					<div class="row">
+					
+						<!-- Avengers Carousel Slide 2 Product 1 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/avenger5.png" class="img-fluid mt-5 mb-2" alt="Avengers: Road to A-Day">
+								<h5 class="comic-title">Avengers: Road to A-Day</h5>
+								<p class="price">€16.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5"onclick="addToCart('Avengers: Road to A-Day', 16.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+						
+						<!-- Avengers Carousel Slide 2 Product 2 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/avenger6.png" class="img-fluid mt-5 mb-2" alt="Avengers Universe 11">
+								<h5 class="comic-title">Avengers Universe 11</h5>
+								<p class="price">€11.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5"onclick="addToCart('Avengers Universe 11', 11.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+						
+						<!-- Avengers Carousel Slide 2 Product 3 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/avenger7.png" class="img-fluid mt-5 mb-2" alt="Young Avengers - Sidekicks">
+								<h5 class="comic-title">Young Avengers - Sidekicks</h5>
+								<p class="price">€10.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5"onclick="addToCart('Young Avengers - Sidekicks', 10.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+						
+						<!-- Avengers Carousel Slide 2 Product 4 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/avenger8.png" class="img-fluid mt-5 mb-2" alt="Dark Ages">
+								<h5 class="comic-title">Dark Ages</h5>
+								<p class="price">€19.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5"onclick="addToCart('Dark Ages', 19.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+						<!-- Avengers Carousel Slide 2 Product END -->
+					</div>
+				</div>
+			</div>
+
+			<!-- carousel Controls -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#productCarousel2" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			
+			<button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	
+		
+				<!-- venoms heading -->
+		<div class="container mt-5 mb-4">
+			<h2 class="category-heading"> 
+			VENOM
+			</h2> 
+		</div>
+
+
+		<!-- venoms Carousel-->
+
+		<div id="productCarousel3" class="carousel slide" style="width: 80%; margin: 0 auto;" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				
+				<!-- venoms Carousel Slide 1 -->
+				<div class="carousel-item active">
+					<div class="row">
+
+						<!-- venoms Carousel Slide 1 Product 1 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/venom1.png" class="img-fluid mt-5 mb-2" alt="Venom Lethal Protector - Life and Deaths">
+								<h5 class="comic-title">Venom Lethal Protector - Life and Deaths</h5>
+								<p class="price">€15.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5" onclick="addToCart('Venom Lethal Protector - Life and Deaths', 15.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+
+						<!-- venoms Carousel Slide 1 Product 2 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/venom2.png" class="img-fluid mt-5 mb-2" alt="Death of the Venomverse">
+								<h5 class="comic-title">Death of the Venomverse</h5>
+								<p class="price">€14.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5" onclick="addToCart('Death of the Venomverse', 14.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+
+						<!-- venoms Carousel Slide 1 Product 3 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/venom3.png" class="img-fluid mt-5 mb-2" alt="Extreme Venomverse">
+								<h5 class="comic-title">Extreme Venomverse</h5>
+								<p class="price">€13.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5" onclick="addToCart('Extreme Venomverse', 13.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+								
+						<!-- venoms Carousel Slide 1 Product 4 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/venom4.png" class="img-fluid mt-5 mb-2" alt="Venom Lethal Protector - Heart of the Hunted">
+								<h5 class="comic-title">Venom Lethal Protector - Heart of the Hunted</h5>
+								<p class="price">€10.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5" onclick="addToCart('Venom Lethal Protector - Heart of the Hunted', 10.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<!-- venoms Carousel Slide 2 -->
+				<div class="carousel-item">
+					<div class="row">
+					
+						<!-- venoms Carousel Slide 2 Product 1 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/venom5.png" class="img-fluid mt-5 mb-2" alt="Venom: Recursion Omnibus">
+								<h5 class="comic-title">Venom: Recursion Omnibus</h5>
+								<p class="price">€16.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5"onclick="addToCart('Venom: Recursion Omnibus', 16.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+						
+						<!-- venoms Carousel Slide 2 Product 2 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/venom6.png" class="img-fluid mt-5 mb-2" alt="Venom: Deviation">
+								<h5 class="comic-title">Venom: Deviation</h5>
+								<p class="price">€21.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5"onclick="addToCart('Venom: Deviation', 21.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+						
+						<!-- venoms Carousel Slide 2 Product 3 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/venom7.png" class="img-fluid mt-5 mb-2" alt="Venom: Recursion">
+								<h5 class="comic-title">Venom: Recursion</h5>
+								<p class="price">€10.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5"onclick="addToCart('Venom: Recursion', 10.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+						
+						<!-- venoms Carousel Slide 2 Product 4 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/venom8.png" class="img-fluid mt-5 mb-2" alt="Venom Essentials Vol. 1">
+								<h5 class="comic-title">Venom Essentials Vol. 1</h5>
+								<p class="price">€9.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5"onclick="addToCart('Venom Essentials Vol. 1', 9.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+						<!-- venoms Carousel Slide 2 Product END -->
+					</div>
+				</div>
+			</div>
+
+			<!-- carousel Controls -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#productCarousel3" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			
+			<button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+			
+			
+		<!-- hulks heading -->
+		<div class="container mt-5 mb-4">
+			<h2 class="category-heading"> 
+			HULK
+			</h2> 
+		</div>
+
+
+		<!-- hulks Carousel-->
+
+		<div id="productCarousel4" class="carousel slide" style="width: 80%; margin: 0 auto" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				
+				<!-- hulks Carousel Slide 1 -->
+				<div class="carousel-item active">
+					<div class="row">
+
+						<!-- hulks Carousel Slide 1 Product 1 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/hulk1.png" class="img-fluid mt-5 mb-2" alt="Hulk: Red Hulk Omnibus">
+								<h5 class="comic-title">Hulk: Red Hulk Omnibus</h5>
+								<p class="price">€25.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5" onclick="addToCart('Hulk: Red Hulk Omnibus', 25.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+
+						<!-- hulks Carousel Slide 1 Product 2 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/hulk2.png" class="img-fluid mt-5 mb-2" alt="Planet Hulk: Worldbreaker">
+								<h5 class="comic-title">Planet Hulk: Worldbreaker</h5>
+								<p class="price">€24.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5" onclick="addToCart('Planet Hulk: Worldbreaker', 24.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+
+						<!-- hulks Carousel Slide 1 Product 3 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/hulk3.png" class="img-fluid mt-5 mb-2" alt="She-Hulk: Jen, Again">
+								<h5 class="comic-title">She-Hulk: Jen, Again</h5>
+								<p class="price">€15.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5" onclick="addToCart('She-Hulk: Jen, Again', 15.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+								
+						<!-- hulks Carousel Slide 1 Product 4 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/hulk4.png" class="img-fluid mt-5 mb-2" alt="The Definitive Incredible Hulk – Deluxe Edition">
+								<h5 class="comic-title">The Definitive Incredible Hulk – Deluxe Edition</h5>
+								<p class="price">€34.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5" onclick="addToCart('The Definitive Incredible Hulk – Deluxe Edition', 34.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<!-- hulks Carousel Slide 2 -->
+				<div class="carousel-item">
+					<div class="row">
+					
+						<!-- hulks Carousel Slide 2 Product 1 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/hulk5.png" class="img-fluid mt-5 mb-2" alt="hulk: Recursion Omnibus">
+								<h5 class="comic-title">hulk: Recursion Omnibus</h5>
+								<p class="price">€16.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5"onclick="addToCart('hulk: Recursion Omnibus', 16.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+						
+						<!-- hulks Carousel Slide 2 Product 2 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/hulk6.png" class="img-fluid mt-5 mb-2" alt="She-Hulk - Superhuman Law">
+								<h5 class="comic-title">She-Hulk - Superhuman Law</h5>
+								<p class="price">€21.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5"onclick="addToCart('She-Hulk - Superhuman Law', 21.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+						
+						<!-- hulks Carousel Slide 2 Product 3 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/hulk7.png" class="img-fluid mt-5 mb-2" alt="Planet Hulk Omnibus">
+								<h5 class="comic-title">Planet Hulk Omnibus </h5>
+								<p class="price">€15.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5"onclick="addToCart('Planet Hulk Omnibus', 15.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+						
+						<!-- hulks Carousel Slide 2 Product 4 -->
+						<div class="col-sm-6 col-md-3 border">
+							<div class="product-card text-center">
+								<img src="../images/products/hulk8.png" class="img-fluid mt-5 mb-2" alt="Planet Hulk Omnibus ">
+								<h5 class="comic-title">Planet Hulk Omnibus </h5>
+								<p class="price">€19.99</p>
+								<button class="btn btn-secondary btn-sm mx-3 mb-5"onclick="addToCart('Planet Hulk Omnibus ', 19.99)">ADD TO BASKET</button>
+							</div>
+						</div>
+						<!-- hulks Carousel Slide 2 Product END -->
+					</div>
+				</div>
+			</div>
+
+			<!-- carousel Controls -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#productCarousel4" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			
+			<button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		
+		<!-- PROMOTION BANNER 2-->
+		<div class="banner-container mt-5 mb-5">
+			<div class="promotion-banner 2">
+				<img class="promotion-banner-picture2" src="../images/products/promotion_banner3.jpg" alt="Promotion Banner">
+			</div>
+		</div>
+		
+
+		<!-- Add JS Script -->		
+		<script src="../js/comic.js"></script>
+		
+		<!-- footer -->
+		<section class="bg-dark text-light">
+			<div class ="container" >
+				<div class ="row g-4">
+				
+					<!-- Contact Information-->
+					<div class ="col-md-6">
+						<div class ="row g-2">
+							<div class ="col-md-12">
+								<h5 class ="text-center"> Contact Information </h5>
+								<ul class ="list-group bg-dark border-0">
+									<li class = "list-group-item bg-dark text-light border-0">
+										<span class="fw-bold"> Location: </span>Unit 2.3, Sandyford Road, Dundrum Town Centre, Dublin, D16 Y661
+									</li>
+									<li class = "list-group-item bg-dark text-light border-0">
+										<span class="fw-bold"> Tel: </span>01 4498 500 
+									</li>
+									<li class = "list-group-item bg-dark text-light border-0">
+										<span class="fw-bold"> Fax: </span>01 4972 200 
+									</li>
+									<li class = "list-group-item bg-dark text-light border-0">
+										<span class="fw-bold"> Mail: </span>admissions@ncirl.ie 
+									</li>
+								</ul>
+							</div>
+					
+							<!-- Follow us -->
+							<div class="col-md-12 mb-5">
+								<h5 class ="text-center"> Follow us </h5>
+								<div class="d-flex justify-content-center gap-4">
+									<a href="https://www.facebook.com/NCIRL/" class ="fuIcon">
+										<img src="../images/icons8-facebook-128.png" alt="facebook icon" />
+									</a>
+									<a href="https://www.instagram.com/ncirl/" class ="fuIcon">
+										<img src="../images/icons8-instagram-160.png" alt="instagram icon" />
+									</a>		
+									<a href="https://x.com/NCIRL" class ="fuIcon">
+										<img src="../images/icons8-twitterx-144.png" alt="instagram icon" />
+									</a>
+								</div>	
+							</div>
+						</div>
+					</div>
+				
+					<!-- map -->
+					<div class ="col-md-6">
+						<div class="col-md-12">
+							<h5 class="text-center">Our Location</h5>
+							<!-- Google Map Embed -->
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19081.403916227475!2d-6.2601432159567345!3d53.28639138113904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867096f4f5c6aa5%3A0xcf9627369ef32a28!2sDundrum%2C%20Dublin%2C%20D16%20Y661!5e0!3m2!1svi!2sie!4v1733192613820!5m2!1svi!2sie" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 mt-2 pb-2 text-center text-light">
+					&copy; 2024, QueensComic
+				</div>
+			</div>
+		</section>
+		
+		
+		<!-- Bootstrap Script -->	
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	</body>
+</html>
