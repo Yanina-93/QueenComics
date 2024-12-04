@@ -1,12 +1,6 @@
 /* navbar style*/
 .navbar {
 	font-family: 'Bebas Neue', sans-serif;
-	height: 15vh;
-	display: flex;
-}
-.navbar-brand img {
-  height: 10vh !important;
-  width: auto !important;
 }
 .navbar.scrolled {
   background-color: rgba(0, 0, 0, 0.8); 
